@@ -1,0 +1,6 @@
+Revision history for Perl extension Acme::KamenriderOOO.
+
+0.01  Sun Oct 23 01:36:58 2011
+	- original version; created by h2xs 1.23 with options
+		-AX -n Acme::KamenriderOOO
+
