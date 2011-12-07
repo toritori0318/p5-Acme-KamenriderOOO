@@ -52,9 +52,9 @@ sub ooo_driver {
 
     my @set_medals;
     for my $medal (@medals) {
-        my $m = $self->_select_medal_class($medal);
-        if($m) {
-            push @set_medals, $m;
+        my @m = grep { $medal eq $_->name } @{$self->{medal}};
+        if(my $mc = shift @m) {
+            push @set_medals, $mc;
         }else{
             die "$medal というメダルは存在しないぞ！";
         }
@@ -67,11 +67,8 @@ sub henshin {
     die 'オーズドライバーにメダルを３つセットしよう！' unless $self->{driver} && scalar @{$self->{driver}} > 0;
 
     my @medal_class;
-    my $combo = eval {
-        for my $combo (@{$self->{combo}}) {
-            return $combo if $combo->is_combo($self->{driver});
-        }
-    };
+    my @is_combo = grep { $_->is_combo($self->{driver}) } @{$self->{combo}};
+    my $combo = shift @is_combo;
     unless($combo) {
         my $module_name = "Acme::KamenriderOOO::Combo::Ashu";
         load_class($module_name);
