@@ -144,29 +144,16 @@ Creates and returns a new Acme::KamenriderOOO object.
 
 =back
 
-=head2 medal ( $name )
+=head2 select ($type, { name => $name } )
 
 =over 4
 
-  my @medal = $ooo->medal();
-  my $medal = $ooo->medal('トラ');
+  my @combo = $ooo->select('combo');
+  my @combo = $ooo->select('combo', {name=>'タジャドル'});
+  my @medal = $ooo->select('medal');
+  my @medal = $ooo->select('medal', {name=>'タカ'});
 
-Returns the medal as a list of the L<Acme::KamenriderOOO::Medal::Base>
-based object represents each medal. See also the documentation of
-L<Acme::KamenriderOOO::Medal::Base> for more details.
-
-=back
-
-=head2 combo ( $name )
-
-=over 4
-
-  my @combo = $ooo->combo();
-  my $combo = $ooo->combo('タトバ');
-
-Returns the combo as a list of the L<Acme::KamenriderOOO:Combo::Base>
-based object represents each combo. See also the documentation of
-L<Acme::KamenriderOOO::Combo::Base> for more details.
+Returns the Acme::KamenriderOOO::Combo or Acme::KamenriderOOO::Medal object.
 
 =back
 
