@@ -9,7 +9,7 @@ sub info {
     return (
         id    => 'tajadoru',
         name  => 'タジャドル',
-        bgm   => 'タージャードルー♪',
+        bgm   => 'タァージャードルー♪',
         medal => ['Taka', 'Kujaku', 'Kondoru'],
         greed => 'アンク',
         color => 'bold red',

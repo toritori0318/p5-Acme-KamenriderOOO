@@ -9,7 +9,7 @@ sub info {
     return (
         id    => 'sagozo',
         name  => 'サゴーゾ',
-        bgm   => 'サゴーゾ！サゴーゾ！',
+        bgm   => 'サゴーゾ！・・サゴーゾ！',
         medal => ['Sai', 'Gorira', 'Zou'],
         greed => 'ガメル',
         color => 'bold white',
