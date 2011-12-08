@@ -9,7 +9,7 @@ sub info {
     return (
         id    => 'tatoba',
         name  => 'タトバ',
-        bgm   => 'タトバ！タトバタトバ！',
+        bgm   => 'タ・ト・バ！タトバタ・ト・バ！',
         medal => ['Taka', 'Tora', 'Batta'],
         greed => 'オーズ',
         color => 'bold white',

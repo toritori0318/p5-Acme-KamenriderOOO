@@ -9,7 +9,7 @@ sub info {
     return (
         id    => 'ratora-ta-',
         name  => 'ラトラータ',
-        bgm   => 'ラトラーター！ラトラータ！',
+        bgm   => 'ラタラター！ラトラータ！',
         medal => ['Lion', 'Tora', 'Chita'],
         greed => 'カザリ',
         color => 'bold yellow',

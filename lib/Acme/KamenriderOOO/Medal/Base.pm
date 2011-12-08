@@ -30,7 +30,8 @@ sub _initialize {
 
 sub say {
     my ($self) = @_;
-    my $str = ($self->color) ? colored($self->name, $self->color) : $self->name;
+    my $name = $self->name . '！';
+    my $str = ($self->color) ? colored($name, $self->color) : $name;
     print "$str\n";
 }
 

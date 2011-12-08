@@ -10,6 +10,8 @@ my @combo = (
     { henshin => 'サゴーゾ',   medal => [ 'サイ','ゴリラ','ゾウ'] },
     { henshin => 'ガタキリバ', medal => [ 'クワガタ','カマキリ','バッタ'] },
     { henshin => 'シャウタ',   medal => [ 'シャチ','ウナギ','タコ'] },
+    { henshin => 'タマシー',   medal => [ 'タカ','イマジン','ショッカー'] },
+    { henshin => 'ブラカワニ', medal => [ 'コブラ','カメ','ワニ'] },
 );
 
 use Acme::KamenriderOOO;
