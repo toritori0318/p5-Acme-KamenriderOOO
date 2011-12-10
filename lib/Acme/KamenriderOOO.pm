@@ -5,7 +5,7 @@ use warnings;
 use Carp  qw(croak);
 use Class::Load qw/load_class/;
 
-our $VERSION = '0.2';
+our $VERSION = '0.3';
 
 my @medal_class = qw/
     Taka     Kujaku   Kondoru
@@ -13,6 +13,7 @@ my @medal_class = qw/
     Lion     Tora     Chita
     Sai      Gorira   Zou
     Shachi   Unagi    Tako
+    Putera   Torikera Thirano
     Imagine  Shocker
     Cobra    Kame     Wani
 /;
@@ -24,6 +25,7 @@ my @combo_class = qw/
     Shauta
     Tajatoru
     Tatoba
+    Putothira
     Tamashii
     Burakawani
 /;
