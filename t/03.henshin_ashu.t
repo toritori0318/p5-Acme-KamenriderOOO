@@ -140,6 +140,6 @@ for (@ashu) {
 dies_ok {
   $ooo->set_driver( 'タカ','クワガタ','ゴリラ' );
   $ooo->henshin;
-}, "不正な組み合わせ";
+} "不正な組み合わせ";
 
 done_testing;
